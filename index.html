@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NostalgiaIm - 黑暗哥特风格个人网站，带幕布式页面切换、粒子效果与爱好弹层。"
+    />
+    <title>NostalgiaIm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading">
+    <div class="loader" data-loader aria-live="polite" aria-label="页面加载中">
+      <div class="loader-gear" aria-hidden="true"></div>
+      <p>OPENING THE DOMAIN</p>
+    </div>
+
+    <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
+
+    <div class="transition-surface" data-transition-surface aria-hidden="true">
+      <div class="transition-veil"></div>
+      <div class="transition-curtain"></div>
+      <div class="transition-seam"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-name">NostalgiaIm</span>
+      </div>
+      <div class="status">
+        <span data-page-counter>01 / 04</span>
+        <small data-page-label>HOME</small>
+      </div>
+    </header>
+
+    <main class="page-stage" data-page-stage>
+      <section class="page is-active" id="home" data-page="home" aria-labelledby="home-english">
+        <div class="page-frame" aria-hidden="true"></div>
+        <div class="page-layout">
+          <div class="page-english" id="home-english">DOMAIN</div>
+          <div class="page-content home-layout">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">首页</p>
+              <h1 id="home-title" class="cn-title">欢迎来到我的领域。</h1>
+              <blockquote class="quote-stack">
+                <p>在这里，现实是苍白的底色，</p>
+                <p>而我的灵魂，在每一个像素、音符与字节的深渊中，</p>
+                <p>投下长长的、不祥的影。</p>
+              </blockquote>
+            </div>
+
+            <div class="curtain-columns reveal" aria-label="首页栏目">
+              <article class="curtain-card">
+                <span>01</span>
+                <strong>像素</strong>
+                <p>图像、动画与界面的阴影剧场。</p>
+              </article>
+              <article class="curtain-card">
+                <span>02</span>
+                <strong>音符</strong>
+                <p>旋律、休止符与轮回的低声回响。</p>
+              </article>
+              <article class="curtain-card">
+                <span>03</span>
+                <strong>字节</strong>
+                <p>代码、模组与机械逻辑的契约。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="about" data-page="about" aria-labelledby="about-english">
+        <div class="page-frame" aria-hidden="true"></div>
+        <div class="page-layout">
+          <div class="page-english" id="about-english">ABOUT ME</div>
+          <div class="page-content about-layout">
+            <figure class="avatar-panel reveal">
+              <img src="assets/avatar.jpg" alt="你的头像" />
+              <figcaption>NostalgiaIm</figcaption>
+            </figure>
+
+            <div class="about-copy reveal">
+              <p class="eyebrow">关于我</p>
+              <h2 id="about-title" class="cn-title">NostalgiaIm</h2>
+              <p>
+                这是我个人宇宙的门牌。左边是头像，右边是正在编织的自我；绘画、音乐、软件、AI 角色、动画与小说，都在同一个暗色坐标里互相牵引。
+              </p>
+              <p>
+                我偏爱深红、墨绿、金属、齿轮、彩窗和沉默的光。页面可以华丽，但信息必须清楚；动效可以神秘，但触感必须顺手。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="hobbies" data-page="hobbies" aria-labelledby="hobbies-english">
+        <div class="page-frame" aria-hidden="true"></div>
+        <div class="page-layout">
+          <div class="page-english" id="hobbies-english">HOBBIES</div>
+          <div class="page-content hobbies-layout">
+            <div class="section-heading reveal">
+              <p class="eyebrow">爱好</p>
+              <h2 id="hobbies-title" class="cn-title">六个爱好档案</h2>
+              <p>点击图片展开文案。每一句都会独立成行，并以竖式方式排列。</p>
+            </div>
+
+            <div class="hobby-grid reveal" aria-label="爱好列表">
+              <button class="hobby-card" type="button" data-hobby="painting">
+                <img src="assets/hobby-painting.png" alt="绘画主题图" />
+                <span>01</span>
+                <strong>绘画</strong>
+              </button>
+              <button class="hobby-card" type="button" data-hobby="music">
+                <img src="assets/hobby-music.png" alt="音乐创作主题图" />
+                <span>02</span>
+                <strong>音乐创作</strong>
+              </button>
+              <button class="hobby-card" type="button" data-hobby="code">
+                <img src="assets/hobby-code.png" alt="编程与软件开发主题图" />
+                <span>03</span>
+                <strong>编程 & 软件开发</strong>
+              </button>
+              <button class="hobby-card" type="button" data-hobby="liora">
+                <img src="assets/hobby-liora.png" alt="AI Vtuber Liora 主题图" />
+                <span>04</span>
+                <strong>AI Vtuber Liora</strong>
+              </button>
+              <button class="hobby-card" type="button" data-hobby="animation">
+                <img src="assets/hobby-animation.png" alt="3D 动画主题图" />
+                <span>05</span>
+                <strong>3D 动画</strong>
+              </button>
+              <button class="hobby-card" type="button" data-hobby="novel">
+                <img src="assets/hobby-novel.png" alt="小说创作主题图" />
+                <span>06</span>
+                <strong>小说创作</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="practice" data-page="practice" aria-labelledby="practice-english">
+        <div class="page-frame" aria-hidden="true"></div>
+        <div class="page-layout">
+          <div class="page-english" id="practice-english">PRACTICE</div>
+          <div class="page-content practice-layout">
+            <div class="section-heading reveal">
+              <p class="eyebrow">练习方式</p>
+              <h2 id="practice-title" class="cn-title">一些入口</h2>
+              <p>这里放你的日常练习、代码仓库与创作发布渠道。</p>
+            </div>
+
+            <div class="practice-grid reveal">
+              <a class="practice-card" href="https://github.com/" target="_blank" rel="noreferrer">
+                <span>GitHub</span>
+                <strong>仓库、提交与版本记录</strong>
+                <small>代码与协作的主轴。</small>
+              </a>
+              <a class="practice-card" href="https://www.jetbrains.com/rider/" target="_blank" rel="noreferrer">
+                <span>Rider</span>
+                <strong>C#、模组与逻辑练习</strong>
+                <small>编程与系统构建。</small>
+              </a>
+              <a class="practice-card" href="https://www.blender.org/" target="_blank" rel="noreferrer">
+                <span>Blender</span>
+                <strong>三维、镜头与动作拆解</strong>
+                <small>3D 与动画试验。</small>
+              </a>
+              <article class="practice-card static">
+                <span>Archive</span>
+                <strong>回到领域入口</strong>
+                <small>重新翻开幕布。</small>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="hobby-modal" data-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel">
+        <button class="modal-close" type="button" data-close-modal aria-label="关闭弹窗">×</button>
+        <img class="modal-image" data-modal-image alt="" />
+        <div class="modal-copy">
+          <p class="eyebrow" data-modal-kicker>Hobby Archive</p>
+          <h3 id="modal-title" data-modal-title></h3>
+          <div class="modal-text" data-modal-text></div>
+        </div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
